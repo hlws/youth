@@ -2,7 +2,6 @@
 # 时间    2020-10-27 15:55
 # IDE   PyCharm
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import time
 import random
 # 指定驱动路径
@@ -20,6 +19,7 @@ listMember = ['王超','方佳佳','马海欧','于雷','马少杰','乔振兴',
             '乔亚杰','刘聚源','陈正才','陈雨凝','周明宇','宋烨空']
 for i in listMember:
     driver.get(url)
+    time.sleep(3)
     AylcId = driver.find_element_by_id("AylcId")
     AylcId.send_keys("北汽福田汽车股份有限公司团委")
     BylcName = driver.find_element_by_id("BylcName")
@@ -27,21 +27,23 @@ for i in listMember:
     Username = driver.find_element_by_id("Username")
     Username.send_keys(i)
     driver.find_element_by_class_name("btn").click()
-    time.sleep(1)
+    time.sleep(2)
     driver.find_element_by_class_name("layui-layer-btn0").click()
-    time.sleep(1)
+    time.sleep(2)
     driver.find_element_by_id("team").click()
-    time.sleep(1)
-    #todo
-    driver.find_element_by_name("word").click()
-    word = driver.find_element_by_name("word")
+    driver.switch_to.frame("layui-layer-iframe1")
+    time.sleep(2)
+    driver.find_element_by_id("word").click()
+    time.sleep(2)
+    word = driver.find_element_by_id("word")
+    time.sleep(2)
     word.send_keys("北京汽车集团有限公司团委")
-    time.sleep(1)
+    time.sleep(2)
     driver.find_element_by_id("btn-search").click()
-    time.sleep(1)
-    driver.find_element_by_id("team").click()
-    time.sleep(1)
+    time.sleep(2)
+    driver.find_element_by_class_name("team").click()
+    time.sleep(2)
     driver.find_element_by_class_name("btn").click()
-    time.sleep(1)
+    time.sleep(2)
+    driver.find_element_by_class_name("layui-layer-btn0").click()
     time.sleep(random.randint(10, 200))
-    driver.quit()
