@@ -31,7 +31,7 @@ for i in listMember:
     word = driver.find_element_by_id("word")
     time.sleep(1000)
     word.send_keys("北京汽车集团有限公司团委")
-    time.sleep()
+    time.sleep(1000)
     driver.find_element_by_id("btn-search").click()
     time.sleep(1000)
     driver.find_element_by_id("team").click()
