@@ -43,4 +43,5 @@ for i in listMember:
     time.sleep(1)
     driver.find_element_by_class_name("btn").click()
     time.sleep(1)
-    time.sleep(random.randint(10, 20))
+    time.sleep(random.randint(10, 200))
+    driver.quit()

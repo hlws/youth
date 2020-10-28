@@ -21,6 +21,7 @@ time.sleep(1)
 driver.switch_to.defaultContent()
 driver.find_element_by_class_name("btn").click()
 time.sleep(1)
+driver.quit()
 # http: // app.bjtitle.com / rui / bj - band.php?u = 610819 & t = 3
 # // *[ @ id = "word"]
 # # word
