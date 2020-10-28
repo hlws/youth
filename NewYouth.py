@@ -5,9 +5,12 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 import random
+# 指定驱动路径
 driver = webdriver.Chrome("D:\python\chromedriver.exe")
-url="http://bqtw.baicgroup.com.cn:1200/"
-listMember=['王超','方佳佳','马海欧','于雷','马少杰','乔振兴','张宁宁','黄硕','张荣祥','王琴','李轩','王永祺','王若男',
+# 需要打开的URL地址
+url = "http://bqtw.baicgroup.com.cn:1200/"
+# 定义人员列表
+listMember = ['王超','方佳佳','马海欧','于雷','马少杰','乔振兴','张宁宁','黄硕','张荣祥','王琴','李轩','王永祺','王若男',
             '郭春慧','卢艺盟','王缘','王海勇','鲁文霞','魏久磊','王涛','亢雯','王梓','刘汉青','包阳','王哲轩','陈湘涛',
             '梁冰','陈鑫泽','王力','张惟琛','佟桐','孙建丽','曹文莹','侯莉红','赵志华','王亚平','李天宇','李思','张燕楠',
             '张峣','张雅楠','张泽宇','陈薇','李然','王斐','刘艳','王俊荣','王伟涛','何昊阳','徐燕茹','杨婧','董倩妤',
