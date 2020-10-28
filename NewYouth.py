@@ -4,6 +4,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import random
 driver = webdriver.Chrome("D:\python\chromedriver.exe")
 url="http://bqtw.baicgroup.com.cn:1200/"
 listMember=['王超','方佳佳','马海欧','于雷','马少杰','乔振兴','张宁宁','黄硕','张荣祥','王琴','李轩','王永祺','王若男',
@@ -37,3 +38,4 @@ for i in listMember:
     time.sleep(1)
     driver.find_element_by_class_name("btn").click()
     time.sleep(1)
+    time.sleep(random.randint(10, 20))
