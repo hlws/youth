@@ -1,6 +1,7 @@
 # 作者    lishaoteng
 # 时间    2020-10-27 15:55
 # IDE   PyCharm
+import datetime as dt
 from selenium import webdriver
 import time
 import random
@@ -46,5 +47,10 @@ for i in listMember:
     driver.find_element_by_class_name("btn").click()
     time.sleep(2)
     driver.find_element_by_class_name("layui-layer-btn0").click()
-    print(i)
-    time.sleep(random.randint(10, 200))
+    now_time = dt.datetime.now().strftime('%F %T')
+    print(i + " " + now_time)
+    f = open('data.txt', 'a', encoding='utf-8')
+    f.write(i + "      " + now_time)
+    f.write('\n')
+    f.close()
+    time.sleep(random.randint(5, 30))
