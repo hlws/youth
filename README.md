@@ -7,7 +7,7 @@
 
 代码文件中：listMember = [此处用来存放人员列表]
 
-           BylcName.send_keys("此处用来填写团委名称")
+BylcName.send_keys("此处用来填写团委名称")
 
 代码边运行边记录进度到同目录下data.txt文件中，如果遇到突然中断，可以打开此文件查看进度，然后继续执行剩
 
