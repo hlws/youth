@@ -4,6 +4,6 @@
 此脚本基于Python3.7环境实现，仅供内部交流学习使用，欢迎一起探讨更有效的实现方法。
 扫码请作者喝咖啡
 
-![](..image/wechat.png)
+![](image/wechat.png)
 
-![](..image/alipay.jpg)
+![](image/alipay.jpg)
